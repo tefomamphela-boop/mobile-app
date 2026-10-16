@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14532d">
+  <title>ReCircle — Make recycling rewarding</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="ReCircle home"><span class="brand-mark">↻</span> ReCircle</a>
+    <nav><a href="#how">How it works</a><a href="#impact">Your impact</a><button class="nav-cta" id="openAdd">Log recycling +</button></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">SMALL ACTIONS. CLEANER COMMUNITIES.</span>
+        <h1>Make recycling<br><em>rewarding.</em></h1>
+        <p>Find nearby recycling options, record what you recycle, and earn points for positive change — one bottle, can, and box at a time.</p>
+        <div class="hero-actions"><a class="button primary" href="#dashboard">Explore the demo <span>↗</span></a><a class="text-link" href="#how">See how it works →</a></div>
+        <div class="trust-row"><span class="avatar-stack"><i>🌱</i><i>♻️</i><i>🌍</i></span><span><strong>Every item counts.</strong><br><small>Start with what you have.</small></span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of recycling and nature">
+        <div class="sun"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="plant-pot"><div class="leaf leaf-a"></div><div class="leaf leaf-b"></div><div class="stem"></div><div class="pot"></div></div>
+        <div class="recycle-symbol">↻</div><div class="floating-card card-bottle">♻️ <span><b>Plastic bottle</b><small>+10 points</small></span></div>
+        <div class="floating-card card-impact">🌍 <span><b>Better together</b><small>Cleaner streets start here</small></span></div>
+      </div>
+    </section>
+
+    <section class="stats" id="dashboard">
+      <div><span class="stat-icon">⭐</span><span class="stat-label">YOUR POINTS</span><strong id="points">120</strong><small>Use points for demo rewards</small></div>
+      <div><span class="stat-icon">♻️</span><span class="stat-label">ITEMS RECYCLED</span><strong id="items">12</strong><small>Items logged in this demo</small></div>
+      <div><span class="stat-icon">🌿</span><span class="stat-label">COMMUNITY IMPACT</span><strong id="impactCount">3.4 kg</strong><small>Estimated material diverted</small></div>
+    </section>
+
+    <section class="section nearby">
+      <div class="section-heading"><div><span class="eyebrow">TAKE THE NEXT STEP</span><h2>Where can you recycle?</h2><p>Explore sample locations and choose the option that works for you.</p></div><span class="demo-tag">DEMO LOCATIONS</span></div>
+      <div class="location-grid">
+        <article class="location-card"><div class="location-art art-green">🏪</div><div class="location-content"><span class="type-pill">DROP-OFF POINT</span><h3>Community Market Hub</h3><p>Plastic bottles · Cans · Paper</p><div class="location-bottom"><span>📍 1.2 km away <small> · Sample location</small></span><button class="small-button" data-location="Community Market Hub">Details</button></div></div></article>
+        <article class="location-card"><div class="location-art art-yellow">🚛</div><div class="location-content"><span class="type-pill">COLLECTION</span><h3>Neighbourhood Collection Day</h3><p>Sorted household recyclables</p><div class="location-bottom"><span>📅 Saturday <small> · Sample schedule</small></span><button class="small-button" data-location="Neighbourhood Collection Day">Details</button></div></div></article>
+        <article class="location-card"><div class="location-art art-blue">🏫</div><div class="location-content"><span class="type-pill">COMMUNITY PARTNER</span><h3>Green Corner School</h3><p>Paper · Cardboard · Plastic</p><div class="location-bottom"><span>📍 2.0 km away <small> · Sample location</small></span><button class="small-button" data-location="Green Corner School">Details</button></div></div></article>
+      </div>
+      <p class="disclaimer">Prototype note: locations and distances are fictional examples. A real launch would verify partners, opening hours, and accepted materials.</p>
+    </section>
+
+    <section class="section split" id="how">
+      <div><span class="eyebrow">SIMPLE BY DESIGN</span><h2>Good habits, made easier.</h2><p class="section-intro">ReCircle helps turn recycling from a confusing chore into a clear, rewarding routine.</p>
+        <div class="steps"><div class="step"><span>01</span><div><h3>Find a place</h3><p>Browse nearby drop-off points and collection options.</p></div></div><div class="step"><span>02</span><div><h3>Log your items</h3><p>Record recyclable materials and see your points add up.</p></div></div><div class="step"><span>03</span><div><h3>Celebrate your impact</h3><p>Track your contribution and explore community rewards.</p></div></div></div>
+      </div>
+      <div class="phone-card"><div class="phone-top"><span>9:41</span><span>●●● ▰</span></div><div class="phone-inner"><div class="phone-greeting">Good morning 👋<h3>Ready to make a difference?</h3></div><div class="phone-score"><small>YOUR RECIRCLE POINTS</small><strong id="phonePoints">120 <small>pts</small></strong><span>Keep your streak growing 🌱</span></div><h4>Quick log</h4><div class="quick-items"><button data-quick="Plastic bottle">🧴<span>Plastic</span><b>+10</b></button><button data-quick="Aluminium can">🥫<span>Can</span><b>+8</b></button><button data-quick="Paper bundle">📦<span>Paper</span><b>+5</b></button></div><div class="phone-tip">💡 <span><b>Today's tip</b><br>Rinse containers and keep recyclables dry.</span></div></div></div>
+    </section>
+
+    <section class="section impact-section" id="impact"><div class="impact-copy"><span class="eyebrow">PROGRESS THAT ADDS UP</span><h2>Make your good work visible.</h2><p>ReCircle gives people a simple way to see the value of their actions and helps community partners understand what materials are being collected.</p><button class="button light" id="openAdd2">Log an item <span>＋</span></button></div><div class="impact-metrics"><div><strong id="impactItems">12</strong><span>items logged</span></div><div><strong id="impactPoints">120</strong><span>points earned</span></div><div><strong id="impactKg">3.4 kg</strong><span>estimated diverted</span></div></div></section>
+
+    <section class="section value-section"><div class="section-heading"><div><span class="eyebrow">WHY RECIRCLE?</span><h2>More useful than a list of bins.</h2></div></div><div class="value-grid"><article><span>📍</span><h3>Local and practical</h3><p>Brings locations, accepted materials, and collection information together.</p></article><article><span>🎯</span><h3>Motivating progress</h3><p>Points and impact tracking make small actions feel meaningful.</p></article><article><span>🤝</span><h3>Community-powered</h3><p>Partners can promote collection drives and encourage participation.</p></article></div></section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">↻</span> ReCircle</a><span>Designed for cleaner, more connected communities.</span><span>Student project prototype · 2026</span></footer>
+
+  <dialog id="logDialog"><form method="dialog" id="logForm"><button class="dialog-close" aria-label="Close">×</button><span class="eyebrow">MAKE IT COUNT</span><h2>Log your recycling</h2><p>Choose an item to add points to your demo profile.</p><label for="material">Material</label><select id="material"><option value="Plastic bottle" data-points="10" data-kg="0.03">Plastic bottle — 10 points</option><option value="Aluminium can" data-points="8" data-kg="0.015">Aluminium can — 8 points</option><option value="Paper bundle" data-points="5" data-kg="0.2">Paper bundle — 5 points</option><option value="Glass bottle" data-points="8" data-kg="0.25">Glass bottle — 8 points</option></select><label for="quantity">Quantity</label><input id="quantity" type="number" min="1" max="50" value="1"><button type="button" class="button primary full" id="saveLog">Add to my impact</button><p class="form-note">Demo only: points and weight are estimates, not verified environmental measurements.</p></form></dialog>
+  <dialog id="infoDialog"><form method="dialog"><button class="dialog-close" aria-label="Close">×</button><span class="eyebrow">LOCATION DETAILS</span><h2 id="infoTitle">Community partner</h2><p id="infoBody"></p><button class="button primary full">Got it</button></form></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
